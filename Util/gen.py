@@ -23,7 +23,7 @@ def gen_good(count):
             'int_num': '{}/{}'.format(random.randint(0,9), random.randint(0,9)),
             'time': '01:02:43'
         }
-        res = render('../templates/template_good.jinja2', context)
+        res = render('../Templates/template_good.jinja2', context)
         res = ' '.join(res.split())
         res = ' '.join(res.split('\n'))
         f.write(res+'\n')
@@ -45,7 +45,7 @@ def gen_bad1(count):
             'int_num': '{}/{}'.format(random.randint(0,9), random.randint(0,9)),
             'time': '01:02:43'
         }
-        res = render('../templates/template_bad1.jinja2', context)
+        res = render('../Templates/template_bad1.jinja2', context)
         res = ' '.join(res.split())
         res = ' '.join(res.split('\n'))
         f.write(res+'\n')
@@ -66,7 +66,7 @@ def gen_bad2(count):
             'int_num': '{}/{}'.format(random.randint(0,9), random.randint(0,9)),
             'time': '01:02:43'
         }
-        res = render('../templates/template_bad2.jinja2', context)
+        res = render('../Templates/template_bad2.jinja2', context)
         res = ' '.join(res.split())
         res = ' '.join(res.split('\n'))
         f.write(res+'\n')
