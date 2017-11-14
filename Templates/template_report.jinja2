@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+    <style>
+      .red{
+        background-color: red;
+      }
+
+      .green{
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>{{title}}</h1>
+    <table border="1">
+      {% for item in items %}
+      <TR>
+        <TD>{{item.ip}}</TD>
+        {% if item.class == "good"%}
+          <TD class="green">{{item.class}}</TD>
+        {% else %}
+          <TD class="red">{{item.class}}</TD>
+        {% endif %}
+        <!-- <TD><SPAN>{{item.output}}</SPAN></TD> -->
+      </TR>
+      {% endfor %}
+</table>
+  </body>
+</html>
